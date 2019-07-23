@@ -33,14 +33,12 @@
 #         :type s: str
 #         :rtype: bool
 #         """
-s = "[]"
-temp = []
+s = "{[]}"
 count = 0
+temp = []
 brackets = {"(": ")", "{": "}", "[": "]"}
 if len(s) == 0:
     print True
-elif len(s) == 1:
-    print False
 elif len(s) == 2:
     for i in s:
         if i in brackets and brackets[i] in s:
@@ -50,6 +48,14 @@ elif len(s) == 2:
             print False
             break
 else:
-    for i in s:
-        if i in brackets and brackets[i] in s:
-            temp.append()
+    if len(s) % 2 == 0:
+        s = list(s)
+        for i in range(0, len(s), 2):
+            if s[i] in brackets and brackets[s[i]] == s[i+1]:
+                count = count + 1
+        if count == len(s)/2:
+            print True
+        else:
+            print False
+    else:
+        print False
