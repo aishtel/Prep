@@ -1,17 +1,11 @@
-# Binary tree search/traverse
-# 1. Breadth first search
-# 2. Depth first search
-
-# Two ways of printing
-# 1. At level order
-# 2. At given level
+# Binary tree search/traverse - Depth first search
 
 # Example binary tree
 #                      1
 #               2               3
 #           4       5
 
-# The Depth First Traversals of this Tree will be:
+# The Depth First Traversals of this tree can be printed as:
 # (a) Inorder   (Left, Root, Right) : 4 2 5 1 3
 # (b) Pre-order  (Root, Left, Right) : 1 2 4 5 3
 # (c) Post-order (Left, Right, Root) : 4 5 2 3 1

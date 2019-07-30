@@ -1,12 +1,10 @@
-# Binary tree search/traverse
-# 1. Breadth first search
-# 2. Depth first search
+# Binary tree search/traverse - Breadth first search
 
-# Two ways of printing
+# There are two ways of printing
 # 1. At level order
 # 2. At given level
 
-# Example binary tree
+# Example binary tree:
 #                      1
 #               2               3
 #           4       5
