@@ -36,3 +36,16 @@ class Solution(object):
             else:
                 return False
 
+
+solution = Solution()
+print "-------------------------------------------------"
+print "Find out whether a number is a palindrome or not"
+print "73656835835:", solution.is_palindrome(73656835835)
+print "-------------------------------------------------"
+print "-73656865637:", solution.is_palindrome(-73656865637)
+print "-------------------------------------------------"
+print "1:", solution.is_palindrome(1)
+print "-------------------------------------------------"
+print "121:", solution.is_palindrome(121)
+print "-------------------------------------------------"
+
