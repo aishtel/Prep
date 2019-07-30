@@ -1,4 +1,5 @@
 # Implement LinkedList data structure
+
 # LinkedList allows the following operations:
 # Insert
 # Append
@@ -31,7 +32,7 @@ class LinkedList(object):
     def list_print(self):
         print_val = self.head
         while print_val is not None:
-            print (print_val.data)
+            print print_val.data
             print_val = print_val.next_node
 
     # Insert - Inserting between two nodes, that is inserts value after position of node specified
@@ -95,30 +96,45 @@ class LinkedList(object):
 linked_list = LinkedList()
 
 # Creating a new linked list
+print "**************************"
+print "Creating a new Linked List"
 linked_list.head = Node("Mon")
+
 e2 = Node("Tues")
 e3 = Node("Wed")
 
 linked_list.head.set_next(e2)
 e2.set_next(e3)
+linked_list.list_print()
 
 # Insert
+print "**************************"
+print "Inserting a node in a Linked List"
 linked_list.insert(e3, "Thur")
+linked_list.list_print()
 
 # Prepend
+print "**************************"
+print "Adding a node to the beginning of a Linked List"
 linked_list.prepend("Sun")
+linked_list.list_print()
 
 # Append
+print "**************************"
+print "Adding a node to the end of a Linked List"
 linked_list.append("Fri")
 linked_list.list_print()
 print "************************"
 
 # Delete
+print "Deleting a node from a Linked List"
 linked_list.delete("Wed")
 linked_list.list_print()
 print "************************"
 
 # Get the data in the 4th position
+print "Getting the 4th node from a Linked List,"
+print "assuming that the linked list is starting from 0"
 data = linked_list.get(4)
 print data
 
