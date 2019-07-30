@@ -1,4 +1,5 @@
-# Arithmetic progression using recursion
+# Arithmetic progression using recursion:
+
 # starting term = a = 1
 # factor = d = a2 - a1
 # Find the nth term - 8th term
@@ -21,10 +22,8 @@ def arithmetic_sequence(a, d, n):
         return d + arithmetic_sequence(a, d, n-1)
 
 
-print arithmetic_sequence(6, 2, 9)
-print arithmetic_sequence(1, 3, 8)
-print arithmetic_sequence(10, 3, 4)
-
-
-# print arithmetic_sequence(2, 4, -1)
+print "The nth term in this arithmetic sequence is", arithmetic_sequence(6, 2, 9)
+print "The nth term in this arithmetic sequence is", arithmetic_sequence(1, 3, 8)
+print "The nth term in this arithmetic sequence is", arithmetic_sequence(10, 3, 4)
+# print "The nth term in this arithmetic sequence is", arithmetic_sequence(2, 4, -1)
 

@@ -26,12 +26,14 @@ def lcm(a, b):
         print "Cannot find least common multiple"
 
 
+print "The greatest common divisor is"
 print gcd(60, 48)
 print gcd(48, 60)
 print gcd(0, 0)
 print gcd(4, 4)
 print gcd("a", 7)
 print "*****************"
+print "The least common multiple is"
 print lcm(1, 56)
 print lcm(34, 1)
 print lcm(0, 22)

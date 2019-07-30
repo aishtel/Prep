@@ -21,9 +21,8 @@ def geo_sequence(a, r, n):
         return r * geo_sequence(a, r, n-1)
 
 
-print geo_sequence(6, 2, 9)
-print geo_sequence(1, 3, 8)
-print geo_sequence(10, 3, 4)
+print "The geometric sequence is", geo_sequence(6, 2, 9)
+print "The geometric sequence is", geo_sequence(1, 3, 8)
+print "The geometric sequence is", geo_sequence(10, 3, 4)
 
-
-print geo_sequence(2, 4, -1)
+# print "The geometric sequence is",geo_sequence(2, 4, -1)

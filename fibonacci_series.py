@@ -1,5 +1,6 @@
-# Fibonacci series = 0, 1, 1, 2, 3, 5, 8, ....
-# Write a function that take n and returns the nth number in the series using recursion
+# Example Fibonacci series = 0, 1, 1, 2, 3, 5, 8, ....
+
+# Write a function that takes n and returns the nth number in the series using recursion
 # n = 3
 # series = 0, 1, 1, 2
 # n = 4
@@ -17,4 +18,5 @@ def fibonacci(n):
         return fibonacci(n-2) + fibonacci(n-1)
 
 
-print fibonacci(6)
+print "The nth number in this series is", fibonacci(6)
+print "The nth number in this series is", fibonacci(30)
