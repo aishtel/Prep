@@ -43,7 +43,7 @@
 # Output: 1994
 # Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
-s = "MCMXCIV"
+s = "LVIII"
 roman_numerals = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000, 'IV': 4, 'IX': 9, 'XL': 50, 'XC': 90,
                   'CD': 400, 'CM': 900}
 integer = []

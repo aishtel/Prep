@@ -26,10 +26,22 @@ class Solution(object):
             else:
                 return 0
         except ValueError:
-            temp = list(str(x)[::-1])
-            temp.insert(0, temp.pop())
-            rtype = int(("".join(temp)))
+            temp = list(str(x))
+            temp.pop(0)
+            rtype = int("".join(temp)[::-1])
             if rtype >= -2147483648:
                 return rtype
             else:
                 return 0
+
+
+solution = Solution()
+print "-----------------------"
+print "Given a 32-bit signed integer, reverse digits of an integer."
+print "Reverse 123:", solution.reverse(123)
+print "Reverse -123:", solution.reverse(-123)
+print "Reverse 120:", solution.reverse(120)
+print "Reverse -120:", solution.reverse(-120)
+print "Reverse 0:", solution.reverse(0)
+print "The data type of reverse of 123:", type(solution.reverse(123))
+print "-----------------------"
